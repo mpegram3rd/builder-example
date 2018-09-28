@@ -4,11 +4,11 @@ import static com.blt.examples.utils.TransformUtils.nullSafe;
 
 /**
  * <p>
- * Description
+ * A phone number split by area code.
  * </p>
  *
  * @author Macon Pegram
- * @version {version}
+ * @version 1.0.0
  */
 public class GnarlyPhone {
 
@@ -51,6 +51,11 @@ public class GnarlyPhone {
 		this.phonenum = phonenum;
 	}
 
+	/**
+	 * The phone number as a string.
+	 *
+	 * @return the phone number as a string
+	 */
 	public String toString() {
 		return new StringBuilder().append("(")
 				.append(nullSafe(getAreacode())).append(") ")

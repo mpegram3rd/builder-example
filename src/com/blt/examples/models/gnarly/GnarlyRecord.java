@@ -2,11 +2,12 @@ package com.blt.examples.models.gnarly;
 
 /**
  * <p>
- * Description
+ * An overly complex data model to demonstrate how a Fluent Builder can help with mapping data
+ * and handling deeply nested values.
  * </p>
  *
  * @author Macon Pegram
- * @version {version}
+ * @version 1.0.0
  */
 public class GnarlyRecord {
 
@@ -30,6 +31,11 @@ public class GnarlyRecord {
 		this.contact = contact;
 	}
 
+	/**
+	 * String representation of the nested structure in this record.
+	 *
+	 * @return this record as a string.
+	 */
 	public String toString() {
 		return contact == null ? "" : contact.toString();
 	}

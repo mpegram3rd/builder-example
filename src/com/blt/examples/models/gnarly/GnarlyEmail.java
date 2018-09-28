@@ -4,11 +4,11 @@ import static com.blt.examples.utils.TransformUtils.nullSafe;
 
 /**
  * <p>
- * Description
+ * An overly complex email address.
  * </p>
  *
  * @author Macon Pegram
- * @version {version}
+ * @version 1.0.0
  */
 public class GnarlyEmail {
 
@@ -51,6 +51,11 @@ public class GnarlyEmail {
 		this.hostname = hostname;
 	}
 
+	/**
+	 * Returns the email address as a string (puts Humpty Dumpty back together again)
+	 *
+	 * @return the string representation of the email.
+	 */
 	public String toString() {
 		return nullSafe(getAccount()) + "@" + nullSafe(getHostname());
 	}

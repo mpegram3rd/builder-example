@@ -4,11 +4,11 @@ import static com.blt.examples.utils.TransformUtils.nullSafe;
 
 /**
  * <p>
- * Description
+ * A slightly more complicated than necessary representation of a name.
  * </p>
  *
  * @author Macon Pegram
- * @version {version}
+ * @version 1.0.0
  */
 public class GnarlyName {
 
@@ -89,6 +89,11 @@ public class GnarlyName {
 		this.suffix = suffix;
 	}
 
+	/**
+	 * Outputs the full name.
+	 *
+	 * @return the full name as a string
+	 */
 	public String toString() {
 		return new StringBuilder().append(nullSafe(getFirstname())).append(" ")
 				.append(nullSafe(getMiddleName())).append(" ")

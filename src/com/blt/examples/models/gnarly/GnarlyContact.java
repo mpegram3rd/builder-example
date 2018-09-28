@@ -2,11 +2,12 @@ package com.blt.examples.models.gnarly;
 
 /**
  * <p>
- * Description
+ * A contact model.  This is here just to add another
+ * layer of complexity to the {@link com.blt.examples.models.gnarly.GnarlyRecord}
  * </p>
  *
  * @author Macon Pegram
- * @version {version}
+ * @version 1.0.0
  */
 public class GnarlyContact {
 
@@ -68,6 +69,11 @@ public class GnarlyContact {
 		this.email = email;
 	}
 
+	/**
+	 * Extracts the contact as a string.
+	 *
+	 * @return the string representation of the contact values.
+	 */
 	public String toString() {
 		final StringBuilder sb = new StringBuilder("GnarlyContact: \n");
 		if (getName() != null)
