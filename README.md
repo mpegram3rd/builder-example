@@ -72,5 +72,5 @@ the caller will call the `Builder.build()` method to retrieve the built model.
 * Does not guarantee that all members of the class being constructed are initialized.
 
 
-To read a bit more about the Fluent Interface Design Pattern, please refer to the following article:
+To read a bit more about the Builder Design Pattern, please refer to the following article:
 [Builder Design Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
